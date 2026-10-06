@@ -128,6 +128,49 @@ CLI documentation
       ▼
 Kubescape v4.0.11
 ```
+# Upstream Contribution Index
+
+For easier review, here is the complete contribution trail documented by this case study.
+
+## Anonymization
+
+| PR | Contribution |
+|---|---|
+| [#2051](https://github.com/kubescape/kubescape/pull/2051) | Add `--hide` flag and anonymization pipeline scaffold |
+| [#2090](https://github.com/kubescape/kubescape/pull/2090) | Anonymize resource identifiers |
+| [#2129](https://github.com/kubescape/kubescape/pull/2129) | Anonymize container names and images |
+| [#2155](https://github.com/kubescape/kubescape/pull/2155) | Support unstructured container metadata |
+| [#2202](https://github.com/kubescape/kubescape/pull/2202) | Reorganize and expand anonymizer tests |
+| [#2300](https://github.com/kubescape/kubescape/pull/2300) | Extend `--hide` to container configuration references |
+| [#2316](https://github.com/kubescape/kubescape/pull/2316) | Anonymize annotation values |
+| [#2326](https://github.com/kubescape/kubescape/pull/2326) | Anonymize resource source metadata |
+| [#2327](https://github.com/kubescape/kubescape/pull/2327) | Hide Git repository context metadata |
+| [#2333](https://github.com/kubescape/kubescape/pull/2333) | Hide service-account names |
+| [#2344](https://github.com/kubescape/kubescape/pull/2344) | Anonymize `LocalRootPath` in hidden output |
+
+## Encryption and reversible protection
+
+| PR | Contribution |
+|---|---|
+| [#2347](https://github.com/kubescape/kubescape/pull/2347) | Transformer abstraction and crypto foundation |
+| [#2351](https://github.com/kubescape/kubescape/pull/2351) | Encryption transformer integration tests |
+| [#2353](https://github.com/kubescape/kubescape/pull/2353) | Fail closed on transformation errors |
+| [#2365](https://github.com/kubescape/kubescape/pull/2365) | Encrypted repository metadata workflow |
+| [#2374](https://github.com/kubescape/kubescape/pull/2374) | DEK wrapping |
+| [#2380](https://github.com/kubescape/kubescape/pull/2380) | Integrate encryption metadata and DEK wrapping |
+| [#2425](https://github.com/kubescape/kubescape/pull/2425) | Encrypted report decryption |
+| [#2440](https://github.com/kubescape/kubescape/pull/2440) | Resource source metadata decryption |
+| [#2441](https://github.com/kubescape/kubescape/pull/2441) | Resource metadata encryption/decryption |
+| [#2442](https://github.com/kubescape/kubescape/pull/2442) | Resource metadata encryption/decryption follow-up |
+| [#2473](https://github.com/kubescape/kubescape/pull/2473) | Reversible container metadata transformation |
+| [#2493](https://github.com/kubescape/kubescape/pull/2493) | Encrypted resource metadata decryption |
+
+## Documentation
+
+| PR | Contribution |
+|---|---|
+| [#2508](https://github.com/kubescape/kubescape/pull/2508) | Document report protection workflow |
+| [#2510](https://github.com/kubescape/kubescape/pull/2510) | Improve CLI help and examples |
 
 ---
 
@@ -589,51 +632,6 @@ The official release contains multiple commits associated with this report-prote
 https://github.com/kubescape/kubescape/releases/tag/v4.0.11
 
 ---
-
-# Upstream Contribution Index
-
-For easier review, here is the complete contribution trail documented by this case study.
-
-## Anonymization
-
-| PR | Contribution |
-|---|---|
-| [#2051](https://github.com/kubescape/kubescape/pull/2051) | Add `--hide` flag and anonymization pipeline scaffold |
-| [#2090](https://github.com/kubescape/kubescape/pull/2090) | Anonymize resource identifiers |
-| [#2129](https://github.com/kubescape/kubescape/pull/2129) | Anonymize container names and images |
-| [#2155](https://github.com/kubescape/kubescape/pull/2155) | Support unstructured container metadata |
-| [#2202](https://github.com/kubescape/kubescape/pull/2202) | Reorganize and expand anonymizer tests |
-| [#2300](https://github.com/kubescape/kubescape/pull/2300) | Extend `--hide` to container configuration references |
-| [#2316](https://github.com/kubescape/kubescape/pull/2316) | Anonymize annotation values |
-| [#2326](https://github.com/kubescape/kubescape/pull/2326) | Anonymize resource source metadata |
-| [#2327](https://github.com/kubescape/kubescape/pull/2327) | Hide Git repository context metadata |
-| [#2333](https://github.com/kubescape/kubescape/pull/2333) | Hide service-account names |
-| [#2344](https://github.com/kubescape/kubescape/pull/2344) | Anonymize `LocalRootPath` in hidden output |
-
-## Encryption and reversible protection
-
-| PR | Contribution |
-|---|---|
-| [#2347](https://github.com/kubescape/kubescape/pull/2347) | Transformer abstraction and crypto foundation |
-| [#2351](https://github.com/kubescape/kubescape/pull/2351) | Encryption transformer integration tests |
-| [#2353](https://github.com/kubescape/kubescape/pull/2353) | Fail closed on transformation errors |
-| [#2365](https://github.com/kubescape/kubescape/pull/2365) | Encrypted repository metadata workflow |
-| [#2374](https://github.com/kubescape/kubescape/pull/2374) | DEK wrapping |
-| [#2380](https://github.com/kubescape/kubescape/pull/2380) | Integrate encryption metadata and DEK wrapping |
-| [#2425](https://github.com/kubescape/kubescape/pull/2425) | Encrypted report decryption |
-| [#2440](https://github.com/kubescape/kubescape/pull/2440) | Resource source metadata decryption |
-| [#2441](https://github.com/kubescape/kubescape/pull/2441) | Resource metadata encryption/decryption |
-| [#2442](https://github.com/kubescape/kubescape/pull/2442) | Resource metadata encryption/decryption follow-up |
-| [#2473](https://github.com/kubescape/kubescape/pull/2473) | Reversible container metadata transformation |
-| [#2493](https://github.com/kubescape/kubescape/pull/2493) | Encrypted resource metadata decryption |
-
-## Documentation
-
-| PR | Contribution |
-|---|---|
-| [#2508](https://github.com/kubescape/kubescape/pull/2508) | Document report protection workflow |
-| [#2510](https://github.com/kubescape/kubescape/pull/2510) | Improve CLI help and examples |
-
 ---
 
 # What This Work Demonstrates
